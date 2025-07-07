@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvaFan - Todo sobre Evangelion</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".slider").bxSlider({
+            mode: 'fade',
+            auto: true,
+            pause: 6000,
+            controls: false,
+            pager: true,
+            stopAutoOnClick: true
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="padre">
+        <div class="hijo c">
+            <div class="slider">
+                <div><img src="img/personajes.jpg" alt=""></div>
+                <div><img src="img/eva1.jpg" alt=""></div>
+                <div><img src="img/eva2.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="hijo m">
+            <h1>¡Descubre el fascinante mundo de Neon Genesis Evangelion!</h1>
+        </div>
+        <div id="hijo">
+            <div class="gs n1">
+                <h2>Sinopsis</h2>
+                <p>En un futuro postapocalíptico, la humanidad enfrenta la amenaza de misteriosas criaturas conocidas como Ángeles. Para combatirlas, la organización secreta NERV recluta a adolescentes que deben pilotar gigantes biomecánicos llamados Evangelion. Shinji Ikari, un joven solitario y con conflictos emocionales, es obligado por su padre a convertirse en piloto. Mientras lucha por salvar el mundo, Shinji y los demás pilotos se ven arrastrados a una compleja trama de conspiraciones, traumas psicológicos y preguntas existenciales sobre la identidad, la soledad y el propósito humano. La serie combina acción con introspección profunda, culminando en un final simbólico y polémico.</p>
+            </div>
+            <div class="gs n2">
+                <h2>Personajes principales</h2>
+                <ul>
+                    <li>Shinji Ikari</li>
+                    <li>Rei Ayanami</li>
+                    <li>Asuka Langley</li>
+                    <li>Misato Katsuragi</li>
+                    <li>Gendo Ikari</li>
+                </ul>
+                <img id="characters"src="img/characters.webp" alt="">
+            </div>
+            <div class="gs n3">
+                <h2>¡Únete al club de fans!</h2>
+                <form action="/enviar" method="post">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <div class="hijo p">
+            <p>© 2025 EvaFan - Neon Genesis Evangelion</p>
+            <p>Dirección: Calle Salamanca 123, Barataria</p>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #74C0FC;"></i></a> | <a href="https://www.youtube.com/watch?v=wubhfypnPJI&list=OLAK5uy_kymSzIaRe3oEW786pYicK32t9v_c7A0f0"><i class="fa-brands fa-youtube" style="color: #74C0FC;"></i></a> | <a href="https://x.com/home"><i class="fa-brands fa-x-twitter" style="color: #74C0FC;"></i></a>
+        </div>
+    </div>
+</body>
+</html>
