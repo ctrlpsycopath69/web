@@ -3,68 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EvaFan - Todo sobre Evangelion</title>
+    <title>Inicio</title>
+    <link rel="icon" type="image/png" href="íconos/oso-de-peluche.png">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $(".slider").bxSlider({
-            mode: 'fade',
-            auto: true,
-            pause: 6000,
-            controls: false,
-            pager: true,
-            stopAutoOnClick: true
-        });
-      });
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="padre">
-        <div class="hijo c">
-            <div class="slider">
-                <div><img src="img/personajes.jpg" alt=""></div>
-                <div><img src="img/eva1.jpg" alt=""></div>
-                <div><img src="img/eva2.jpg" alt=""></div>
-            </div>
-        </div>
-        <div class="hijo m">
-            <h1>¡Descubre el fascinante mundo de Neon Genesis Evangelion!</h1>
-        </div>
-        <div id="hijo">
-            <div class="gs n1">
-                <h2>Sinopsis</h2>
-                <p>En un futuro postapocalíptico, la humanidad enfrenta la amenaza de misteriosas criaturas conocidas como Ángeles. Para combatirlas, la organización secreta NERV recluta a adolescentes que deben pilotar gigantes biomecánicos llamados Evangelion. Shinji Ikari, un joven solitario y con conflictos emocionales, es obligado por su padre a convertirse en piloto. Mientras lucha por salvar el mundo, Shinji y los demás pilotos se ven arrastrados a una compleja trama de conspiraciones, traumas psicológicos y preguntas existenciales sobre la identidad, la soledad y el propósito humano. La serie combina acción con introspección profunda, culminando en un final simbólico y polémico.</p>
-            </div>
-            <div class="gs n2">
-                <h2>Personajes principales</h2>
-                <ul>
-                    <li>Shinji Ikari</li>
-                    <li>Rei Ayanami</li>
-                    <li>Asuka Langley</li>
-                    <li>Misato Katsuragi</li>
-                    <li>Gendo Ikari</li>
+    <nav class="navbar navbar-expand-lg r1">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex flex-row" href="https://youtu.be/4favhaXb4dI?si=aCgWcgtovJg6CBwg&t=832">
+                <img id="teto" src="img/teto_peluche.jpg" alt=""><h2 id="Título">Aniluches</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active p2 fs-4" aria-current="page" href="inicio.html">
+                        <p class="p3">Inicio</p>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link p2 fs-4" href="servicios.html">
+                        <p class="p3">Servicios</p>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link p2 fs-4" href="contactos.html">
+                        <p class="p3">Contactos</p>
+                    </a>
+                    </li>
                 </ul>
-                <img id="characters"src="img/characters.webp" alt="">
-            </div>
-            <div class="gs n3">
-                <h2>¡Únete al club de fans!</h2>
-                <form action="/enviar" method="post">
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
-                    <label for="email">Correo electrónico:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <input type="submit" value="Enviar">
-                </form>
             </div>
         </div>
-        <div class="hijo p">
-            <p>© 2025 EvaFan - Neon Genesis Evangelion</p>
-            <p>Dirección: Calle Salamanca 123, Barataria</p>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #74C0FC;"></i></a> | <a href="https://www.youtube.com/watch?v=wubhfypnPJI&list=OLAK5uy_kymSzIaRe3oEW786pYicK32t9v_c7A0f0"><i class="fa-brands fa-youtube" style="color: #74C0FC;"></i></a> | <a href="https://x.com/home"><i class="fa-brands fa-x-twitter" style="color: #74C0FC;"></i></a>
+    </nav>
+    <div class="container-fluid my-2">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="imágenes/figuras1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="imágenes/peluches1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="imágenes/peluches4.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center py-2">¡Frikadas para frikis!</h1>
+                <h2 class="text-center py-2">Si deseas conocer más acerca de nuestros productos, ingresa a "Servicios", aquí abajo.</h2>
+                <div class="card py-2" style="width: 18rem;">
+                    <img src="img/walterwhite.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Conoce más de nosotros</h5>
+                        <p class="card-text">Estás a punto de adentrarte en el pequeño proyecto de un estudiante, no te olvides de llevar tu amabilidad, ¡gracias!</p>
+                        <a href="servicios.html" class="btn btn-primary a1">Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary c1">
+        <div class="row">
+            <div class="col text-center">
+                <p class="p1 my-3">Copyright © Aniluches 2025</p>
+                <p class="p1">Todos los derechos reservados</p>
+                <a href="https://www.instagram.com/"><img class="img2" src="íconos/instagram.svg" alt=""></a><a href="https://x.com/home?lang=es"><img class="img2" src="íconos/twitter-x.svg" alt=""></a><a href="https://youtu.be/yCgHTmv4YU8?si=bfbPTbOgl4fEfMhx"><img class="img2" src="íconos/youtube.svg" alt=""></a>
+            </div>
         </div>
     </div>
 </body>
